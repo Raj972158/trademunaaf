@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Trade with Munaaf</title>
+<title>TRADE WITH MUNAAF</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <!-- Meta Pixel Code -->
 <script>
@@ -19,141 +18,205 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1165869465583329');
+fbq('init', '4510170172531941');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1165869465583329&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=4510170172531941&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-background:#0f172a;
-color:white;
+    background:#07141f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:14px;
+    overflow-x:hidden;
 }
 
-/* card */
+/* MAIN CARD */
 
-.card{
-width:350px;
-padding:40px 30px;
-border-radius:20px;
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(20px);
-border:1px solid rgba(255,255,255,0.15);
-text-align:center;
-box-shadow:0 0px 80px rgba(0,0,0,.6);
-animation:float 4s ease-in-out infinite;
+.container{
+    width:100%;
+    max-width:390px;
+    background:#0d1b28;
+    border-radius:26px;
+    padding:28px 20px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,0.05);
+    box-shadow:0 0 30px rgba(0,255,255,0.08);
 }
 
-@keyframes float{
-0%,100%{transform:translateY(0)}
-50%{transform:translateY(-10px)}
-}
+/* PROFILE */
 
 .profile{
-width:110px;
-height:110px;
-border-radius:50%;
-border:4px solid white;
-object-fit:cover;
-margin-bottom:15px;
+    width:95px;
+    height:95px;
+    margin:auto;
+    position:relative;
 }
 
-h2{
-margin-bottom:10px;
+.profile img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #42e8ff;
 }
 
-.text{
-font-size:14px;
-line-height:1.6;
-opacity:.9;
-margin-bottom:25px;
+.online{
+    width:18px;
+    height:18px;
+    background:#3cff65;
+    border-radius:50%;
+    position:absolute;
+    right:4px;
+    bottom:8px;
+    border:2px solid #0d1b28;
 }
 
-/* button */
+/* TITLE */
 
-.btn{
-display:inline-flex;
-align-items:center;
-gap:12px;
-padding:15px 32px;
-border-radius:50px;
-background:linear-gradient(45deg,#6366f1,#06b6d4);
-color:white;
-text-decoration:none;
-font-weight:bold;
-font-size:16px;
-position:relative;
-transition:.4s;
-overflow:hidden;
+h1{
+    color:#fff;
+    font-size:28px;
+    margin-top:18px;
+    font-weight:700;
+    line-height:1.3;
 }
 
-.btn:hover{
-transform:scale(1.1);
-box-shadow:0 0 30px #06b6d4;
+h1 span{
+    color:#5ce7ff;
 }
 
-/* sparkle animation */
+/* VERIFY */
 
-.btn span{
-position:absolute;
-width:6px;
-height:6px;
-background:white;
-border-radius:50%;
-animation:spark 3s infinite;
+.verify{
+    color:#4fe5ff;
+    margin-top:10px;
+    font-size:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:7px;
+    font-weight:500;
 }
 
-.btn span:nth-child(1){top:-10px;left:20%}
-.btn span:nth-child(2){top:-10px;left:50%;animation-delay:1s}
-.btn span:nth-child(3){top:-10px;left:80%;animation-delay:2s}
-
-@keyframes spark{
-0%{transform:translateY(0);opacity:1}
-100%{transform:translateY(-40px);opacity:0}
+.verify .tick{
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:#4fe5ff;
+    color:#07141f;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:11px;
+    font-weight:bold;
 }
 
-/* countdown */
+/* DESCRIPTION */
 
-.timer{
-margin-top:15px;
-font-size:13px;
-opacity:.8;
+.desc{
+    color:#d6e0e7;
+    font-size:14px;
+    line-height:1.7;
+    margin-top:18px;
+    padding:0 4px;
 }
 
-/* disclaimer */
+/* BUTTON */
 
-.disclaimer{
-margin-top:20px;
-font-size:11px;
-opacity:.6;
-text-align:center;
+.telegram-btn{
+    margin-top:24px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    text-decoration:none;
+    background:linear-gradient(90deg,#48dfff,#76f4ff);
+    color:#07141f;
+    padding:15px;
+    border-radius:16px;
+    font-size:18px;
+    font-weight:700;
+    transition:0.3s;
 }
 
-.ads{
-margin-top:6px;
-font-size:12px;
-text-align:center;
+.telegram-btn:hover{
+    transform:scale(1.02);
 }
 
-.ads a{
-color:#22c55e;
-font-weight:bold;
-text-decoration:none;
+.telegram-btn img{
+    width:24px;
+}
+
+/* FEATURES */
+
+.features{
+    margin-top:22px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+}
+
+.box{
+    background:#111f2d;
+    border-radius:18px;
+    padding:18px 10px;
+    border:1px solid rgba(255,255,255,0.04);
+}
+
+.icon{
+    font-size:28px;
+    margin-bottom:8px;
+}
+
+.box h3{
+    color:#fff;
+    font-size:17px;
+    margin-bottom:3px;
+}
+
+.box p{
+    color:#b9c5cf;
+    font-size:12px;
+}
+
+/* MOBILE PERFECT */
+
+@media(max-width:480px){
+
+    .container{
+        max-width:100%;
+        border-radius:22px;
+        padding:24px 16px;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    .telegram-btn{
+        font-size:16px;
+        padding:14px;
+    }
+
+    .box h3{
+        font-size:15px;
+    }
+
 }
 
 </style>
@@ -161,64 +224,83 @@ text-decoration:none;
 
 <body>
 
-<div>
+<div class="container">
 
-<div class="card">
+    <!-- PHOTO -->
+    <!-- image.jpg की जगह अपना JPG फोटो डालना -->
 
-<img src="p.jpg" class="profile">
+    <div class="profile">
+        <img src="p.jpg" alt="">
+        <div class="online"></div>
+    </div>
 
-<h2>👑Trade With Munaaf👑</h2>
+    <!-- TITLE -->
 
-<div class="text">
-Start Earning with Expert Calls🔥<br>
-Trusted by 12,000+ Traders🌍<br>
-Join our Channel for daily updates✅
+    <h1>TRADE WITH MUNAAF <span>OFFICIAL™</span></h1>
+
+    <!-- VERIFIED -->
+
+    <div class="verify">
+        <div class="tick">✓</div>
+        Verified Expert Account
+    </div>
+
+    <!-- DESCRIPTION -->
+
+    <div class="desc">
+        Welcome to the elite community. Get access to premium daily updates,
+        exclusive strategies and 24/7 support from our experts.
+    </div>
+
+    <!-- TELEGRAM BUTTON -->
+
+    <!-- यहाँ अपना Telegram लिंक डालना -->
+
+    <a href="https://t.me/+dl8j7NWgPM0zMGM1" target="_blank" class="telegram-btn">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
+
+        Join Telegram Channel
+
+    </a>
+
+    <!-- FEATURES -->
+
+    <div class="features">
+<div class="box">
+            <div class="icon">🛡️</div>
+            <h3>Secure</h3>
+            <p>Safe Platform</p>
+        </div>
+
+        <div class="box">
+            <div class="icon">⭐</div>
+            <h3>Premium</h3>
+            <p>Daily Updates</p>
+        </div>
+
+        <div class="box">
+            <div class="icon">👥</div>
+            <h3>100k+</h3>
+            <p>Active Members</p>
+        </div>
+
+        <div class="box">
+            <div class="icon">⚡</div>
+            <h3>Live</h3>
+            <p>Real-time Info</p>
+        </div>
+
+    </div>
+<div style="text-align:center; margin-top:18px; font-size:16px; color:#ffffff;">
+    As managed by
+    <a href="https://telegram.me/+LiETHEERYtgzNjU1"
+       target="_blank"
+       style="color:#FFEB3B; text-decoration:none; font-weight:bold;">
+        APEagency
+    </a>
 </div>
-
-<a class="btn" href="https://telegram.me/+dl8j7NWgPM0zMGM1" target="_blank">
-
-<i class="fab fa-telegram"></i>
-Join Now Free
-<i class="fab fa-telegram"></i>
-
-<span></span>
-<span></span>
-<span></span>
-
-</a>
-
-<div class="timer">
-Redirecting in <span id="count">30</span> seconds...
 </div>
-
-</div>
-
-<div class="disclaimer">
-This channel is for educational and informational purposes only.
-</div>
-
-<div class="ads">
-ads Managed by <a href="https://telegram.me/+LiETHEERYtgzNjU1" target="_blank">APEagency</a>
-</div>
-
-</div>
-
-<script>
-
-let time=30;
-let counter=document.getElementById("count");
-
-setInterval(()=>{
-time--;
-counter.innerText=time;
-
-if(time<=0){
-window.location.href="https://telegram.me/+dl8j7NWgPM0zMGM1";
-}
-
-},1000);
-
-</script>
 
 </body>
 </html>
